@@ -1,14 +1,12 @@
 import * as React from "react";
 import Layout from "../components/layout";
 
-const IndexPage = () => {
+export default function About() {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="About Page">
       <h1>Welcome to my Gatsby site!</h1>
     </Layout>
   );
-};
+}
 
-export default IndexPage;
-
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>About Page</title>;
