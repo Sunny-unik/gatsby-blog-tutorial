@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default function About() {
   return (
     <Layout pageTitle="About Page">
-      <h1>Welcome to my Gatsby site!</h1>
+      <h4>Created using gatsby official documentations.</h4>
     </Layout>
   );
 }
