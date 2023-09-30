@@ -2,13 +2,18 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 
-export default function blog({ data: { allFile } }) {
+export default function blog({ data: { allMdx } }) {
   return (
     <Layout pageTitle="Blog Page">
       <h4>All blog links are:</h4>
       <ul>
-        {allFile.nodes.map(({ name, id }) => (
-          <li key={id}>{name}</li>
+        {allMdx.nodes.map(({ frontmatter, id, body }) => (
+          <li key={id}>
+            <p>
+              {frontmatter.title}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{frontmatter.date}
+            </p>
+            <br />
+          </li>
         ))}
       </ul>
     </Layout>
@@ -17,10 +22,14 @@ export default function blog({ data: { allFile } }) {
 
 export const defaultQuery = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        name
+        frontmatter {
+          title
+          date(fromNow: true)
+        }
         id
+        body
       }
     }
   }
