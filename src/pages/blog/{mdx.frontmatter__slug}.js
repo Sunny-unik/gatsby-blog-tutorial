@@ -9,8 +9,10 @@ export default function BlogPage({ data: { mdx }, children }) {
   return (
     <Layout pageTitle={mdx.frontmatter.title}>
       <GatsbyImage image={heroImage} loading="lazy" alt={mdx.frontmatter.heroImageAlt} />
-      <div style={{ marginTop: "6px", display: "inline-block" }}>{mdx.frontmatter.date}</div>{" "}
-      <a href={mdx.frontmatter.heroImageCreditLink} target="_blank">
+      Upload on:{" "}
+      <div style={{ marginTop: "6px", display: "inline-block" }}>{mdx.frontmatter.date}</div>
+      &nbsp;<b>|</b>&nbsp;Photo Credits:{" "}
+      <a href={mdx.frontmatter.heroImageCreditLink} target="_blank" rel="noreferrer">
         {mdx.frontmatter.heroImageCreditText}
       </a>
       {children}
