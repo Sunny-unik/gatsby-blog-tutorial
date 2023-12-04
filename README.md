@@ -3,9 +3,13 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+<div align="center">
+
+# Gatsby Minimal Starter
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Sunny-unik/gatsby-blog-tutorial)
+
+</div>
 
 ## 🚀 Quick start
 
@@ -42,7 +46,7 @@
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Netlify)
+## 🚀 Quick deploy (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
