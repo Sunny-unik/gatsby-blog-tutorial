@@ -17,3 +17,6 @@
 .nav-link-text {
   color: black;
 }
+.fullWidth {
+  width: 100% !important;
+}
