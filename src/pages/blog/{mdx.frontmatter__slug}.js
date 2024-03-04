@@ -13,7 +13,7 @@ export default function BlogPage({ data: { mdx }, children }) {
         image={heroImage}
         loading="lazy"
         alt={mdx.frontmatter.heroImageAlt}
-        imgClassName={fullWidth}
+        className={fullWidth}
       />
       Upload on:{" "}
       <div style={{ marginTop: "6px", display: "inline-block" }}>{mdx.frontmatter.date}</div>
